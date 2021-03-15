@@ -20,7 +20,7 @@
         "heroTitle" : "Bank & CO",
         "heroDesc"  : "Centralized and Privatized",
         "buttonTxt" : "Sign In",
-        "contentNum"   : 2,
+        "contentNum"   : 3,
         "content0"  : {
             "key": "Burdened By Wealth?",
             "val": "Do you feel like you have too much money? Don't know where to put it? Well don't worry we have the solution for you!"
@@ -28,6 +28,10 @@
         "content1"  : {
             "key": "Make More Doing Less",
             "val": "Don't work for your money, just let someone else do the work for you! We will pay you to let us keep your money nice and safe."
+        },
+        "content2"  : {
+            "key": "State of the Art Security",
+            "val": "Your money is safe with us. With the latest technology, we prevent any malicous activity at the source!"
         }
     },
     "klepty" : {
@@ -119,6 +123,23 @@
                 "nextDialogue" : "dialogue4",
                 "nextResponse" : "responseStop"
             }],
+        "dialogue5": "Piece of cake kid! Get through the captcha and you're home free. You are human right?",
+        "response5": [{
+                "txt": "Of course",
+                "nextDialogue" : "dialogue6",
+                "nextResponse" : "responseStop"
+            }, {
+                "txt": "A captcha?",
+                "nextDialogue" : "dialogue50",
+                "nextResponse" : "response50"
+            }],
+        "dialogue50": "Captchas, the greatest security known to all bot kind",
+        "response50": [{
+                "txt": "Of course...",
+                "nextDialogue" : "dialogue6",
+                "nextResponse" : "responseStop"
+            }],
+        "dialogue6": "Work your magic kid",
 
         "dialogue10": "That sounds like something a cop would say. Sorry kid you're done",
         "dialogue12": "Crime is such a harsh word man. Stop ruining my vibe.",

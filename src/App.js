@@ -4,6 +4,7 @@
     import Hero from './Hero.js'
     import Content from './Content.js'
     import Klepty from './Klepty.js'
+    import Captcha from './Captcha.js'
 
     // Const Json
     import C from "./resources/const.json"
@@ -17,7 +18,8 @@
 
     import bankHeroImg from './resources/bankImage.jpg'
     import bankIm0 from './resources/bank_fustrated.jpg'
-    import bankIm1 from './resources/bank_safe.jpg'
+    import bankIm1 from './resources/bank_money.jpg'
+    import bankIm2 from './resources/bank_safe.jpg'
 
 
 
@@ -36,7 +38,8 @@
     level: 0,
     showKlepty: false,
     showLogin: false,
-
+    username: "",
+    password: ""
     // Const
 
     };
@@ -58,7 +61,7 @@
         case 1:
             source = C.bank
             heroImg = bankHeroImg
-            images = [bankIm0, bankIm1]
+            images = [bankIm0, bankIm1, bankIm2]
             level = 1
             break;
 
@@ -125,21 +128,48 @@
     }
 
     adClicked() {
-        this.setStateValues(1)
+        let {showKlepty} = this.state
+
+        if (showKlepty)
+            this.setStateValues(1)
     }
 
     showLogin = e => {
             this.setState((prevState, props) => {
                 return {
                     showLogin: true
-
                 }
             })
     }
 
+    setUsername(name) {
+        this.setState((prevState, props) => {
+            return {
+                username:name
+            }
+        })
+    }
 
-    // ===========FUNCTIONS FOR PRODUCTION FRONT END DISPLAY===========
+    setPassword(pwd) {
+            this.setState((prevState, props) => {
+                return {
+                    password:pwd
+                }
+            })
+    }
 
+    signIn(e) {
+        let {username, password} = this.state
+        if (username == "US.Gov" && password == "BigMoney123!") {
+            this.setState((prevState, props) => {
+                return {
+                    level: 2,
+                    showLogin: false
+
+                }
+            })
+        }
+    }
 
     // ======================
     // RENDER
@@ -147,7 +177,7 @@
     let {hero, heroTitle, heroDesc, contentNum, images, text, showKlepty, showLogin, level, buttonTxt} = this.state
 
     let contentArray = []
-    if(contentNum > 0){
+    if(contentNum > 0 && level < 2){
         for(let i = 0; i < contentNum; i++){
         let form = i%2
         let key = `content${i}`
@@ -178,15 +208,29 @@
     }
 
     let loginComp
-    if (showLogin) {
-        loginComp = <div><p>Test</p></div>
+    if (showLogin && level < 2) {
+        loginComp =   <div class="loginContainer">
+                        <label for="uname"><b>Username</b></label>
+                        <input onChange={e => this.setUsername(e.target.value)}type="text" placeholder="Enter Username" name="uname" required/>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input onChange={e => this.setPassword(e.target.value)}type="password" placeholder="Enter Password" name="psw" required/>
+
+                        <button onClick={e => this.signIn(e)} type="submit">Login</button>
+                    </div>
     }
 
+    if (level >= 2) {
+        contentArray.push(<h1 class="center">Hello Customer. Please prove you are human with the below Captcha</h1>)
+        contentArray.push(<h1 class="center">Hello Customer. Please prove you are human with the below Captcha</h1>)
+
+    }
     return (
         <div className="main">
         <Hero level={level} buttonTxt={buttonTxt} title={heroTitle} desc={heroDesc} img={hero}  func={funcProp}/>
 
         <div className="mainBody">
+            <Captcha/>
             {loginComp}
             {contentArray}
         </div>

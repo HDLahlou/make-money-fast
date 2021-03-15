@@ -9,7 +9,7 @@ class Klepty extends Component {
         // State
         kleptySays: C.klepty.dialogue0,
         responses: C.klepty.response0,
-        level: 0,
+        captcha: false
       };
 
   chooseResponse(index) {
@@ -26,10 +26,31 @@ class Klepty extends Component {
       })
   }
 
+    loginPhase() {
+        this.setState((prevState, props) => {
+            return {
+                kleptySays: C.klepty["dialogue5"],
+                responses: C.klepty["response5"]
+            }
+      })
+    }
+
   render() {
-    let {kleptySays, responses} = this.state
+    let {kleptySays, responses, captcha} = this.state
+
+    if (this.props.level == 2 && captcha == false) {
+        this.setState((prevState, props) => {
+            return {
+                kleptySays: C.klepty["dialogue5"],
+                responses: C.klepty["response5"],
+                captcha: true
+            }
+      })
+    }
+
     let userResponse = []
     let textToRender = kleptySays
+
     for (let index = 0; index < responses.length; index++) {
         userResponse.push(<button
                             onClick={() => this.chooseResponse(index)}>
