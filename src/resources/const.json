@@ -147,5 +147,6 @@
         "responseStop" : []
 
 
-    }
+    },
+    "captchaTxt" : ["would you download a car", "i am a human", "property is theft", "what is real", "when will it end"]
 }

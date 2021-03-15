@@ -171,6 +171,11 @@
         }
     }
 
+    incrLevel = e => {
+        this.setState(prevState => {
+            return {level: prevState.level + 1}
+        })
+    }
     // ======================
     // RENDER
     render() {
@@ -222,7 +227,7 @@
 
     if (level >= 2) {
         contentArray.push(<h1 class="center">Hello Customer. Please prove you are human with the below Captcha</h1>)
-        contentArray.push(<h1 class="center">Hello Customer. Please prove you are human with the below Captcha</h1>)
+        contentArray.push(<Captcha func={this.incrLevel}/>)
 
     }
     return (
@@ -230,7 +235,6 @@
         <Hero level={level} buttonTxt={buttonTxt} title={heroTitle} desc={heroDesc} img={hero}  func={funcProp}/>
 
         <div className="mainBody">
-            <Captcha/>
             {loginComp}
             {contentArray}
         </div>
