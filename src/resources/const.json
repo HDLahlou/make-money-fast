@@ -1,0 +1,130 @@
+{
+    "landing" : {
+        "heroImg"   : "./resources/initHeroImg2.jpg",
+        "heroTitle" : "Earn More",
+        "heroDesc"  : "The Easy Way",
+        "buttonTxt" : "Learn More",
+        "contentNum"   : 2,
+        "content0"  : {
+            "key": "Tired of Working?",
+            "val": "Working a 9 to 5? Tired of having to earn a living? Tired of being subject to a ratrace that you did not agree to? Well look no further!"
+        },
+        "content1"  : {
+            "key": "Make More Doing Less",
+            "val": "Don't work for your money, just let someone else do the work for you! Get all of the benefits of being upper management with slightly less work and slightly more stealing! Click the *Learn More* button above for more info"
+        },
+        "ad_txt" : ["Got money? We want it!", "Big Money Needs Big Banks", "Plz Gimmie your $$$"]
+    },
+    "bank" : {
+        "heroImg"   : "./resources/bankImage.jpg",
+        "heroTitle" : "Bank & CO",
+        "heroDesc"  : "Centralized and Privatized",
+        "buttonTxt" : "Sign In",
+        "contentNum"   : 2,
+        "content0"  : {
+            "key": "Burdened By Wealth?",
+            "val": "Do you feel like you have too much money? Don't know where to put it? Well don't worry we have the solution for you!"
+        },
+        "content1"  : {
+            "key": "Make More Doing Less",
+            "val": "Don't work for your money, just let someone else do the work for you! We will pay you to let us keep your money nice and safe."
+        }
+    },
+    "klepty" : {
+        "dialogue0": "Hello! Are you ready to make money!",
+        "response0": [{
+                        "txt": "Who are you",
+                        "nextDialogue" : "dialogue00",
+                        "nextResponse" : "response00"
+                    }, {
+                        "txt": "Gimmie money",
+                        "nextDialogue" : "dialogue1",
+                        "nextResponse" : "response1"
+                    }],
+        "dialogue00": "I'm Klepty silly. What, are you a cop or something?",
+        "response00": [{
+                        "txt": "What's it to you",
+                        "nextDialogue" : "dialogue10",
+                        "nextResponse" : "responseStop"
+                    }, {
+                        "txt": "No",
+                        "nextDialogue" : "dialogue1",
+                        "nextResponse" : "response1"
+                    }],
+        "dialogue1": "Good, have you ever heard of identity theft?",
+        "response1": [{
+                "txt": "Of course",
+                "nextDialogue" : "dialogue2",
+                "nextResponse" : "response2"
+            }, {
+                "txt": "No",
+                "nextDialogue" : "dialogue11",
+                "nextResponse" : "response11"
+            }],
+        "dialogue11": "It's like playing a game of pretend",
+        "response11": [{
+                "txt": "Sounds fun",
+                "nextDialogue" : "dialogue2",
+                "nextResponse" : "response2"
+            }, {
+                "txt": "You mean a crime",
+                "nextDialogue" : "dialogue12",
+                "nextResponse" : "responseStop"
+            }],
+        "dialogue2": "That's great! Does that mean I can count on you?",
+        "response2": [{
+                "txt": "Sure",
+                "nextDialogue" : "dialogue3",
+                "nextResponse" : "response3"
+            }, {
+                "txt": "That's vague",
+                "nextDialogue" : "dialogue20",
+                "nextResponse" : "response20"
+            }],
+        "dialogue20": "Vague is necessary in our line of work. You in or not?",
+        "response20": [{
+                "txt": "I'm in",
+                "nextDialogue" : "dialogue3",
+                "nextResponse" : "response3"
+            }, {
+                "txt": "Fine",
+                "nextDialogue" : "dialogue21",
+                "nextResponse" : "responseStop"
+            }],
+        "dialogue3": "Ok, first things first, click the Ad on the right",
+        "response3": [{
+                "txt": "What next",
+                "nextDialogue" : "dialogue4",
+                "nextResponse" : "response4"
+            }, {
+                "txt": "An Ad?",
+                "nextDialogue" : "dialogue30",
+                "nextResponse" : "response30"
+            }],
+        "dialogue30": "Yes you're on the internet. you know what an Ad is",
+        "response30": [{
+                "txt": "Ok whats next",
+                "nextDialogue" : "dialogue4",
+                "nextResponse" : "response4"
+            }],
+        "dialogue4": "Log In. Username: US.Gov Password: BigMoney123!",
+        "response4": [{
+                "txt": "US.Gov? Really",
+                "nextDialogue" : "dialogue40",
+                "nextResponse" : "response40"
+            }],
+        "dialogue40": "It's just a username. Do you think my legal name is Klepty?",
+        "response40": [{
+                "txt": "Fair enough",
+                "nextDialogue" : "dialogue4",
+                "nextResponse" : "responseStop"
+            }],
+
+        "dialogue10": "That sounds like something a cop would say. Sorry kid you're done",
+        "dialogue12": "Crime is such a harsh word man. Stop ruining my vibe.",
+        "dialogue21": "I don't like your attitude. Come back when you fix that.",
+        "responseStop" : []
+
+
+    }
+}
