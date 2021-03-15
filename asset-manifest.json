@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/make-money-fast/static/css/main.a6665b44.chunk.css",
-    "main.js": "/make-money-fast/static/js/main.00b37b73.chunk.js",
-    "main.js.map": "/make-money-fast/static/js/main.00b37b73.chunk.js.map",
-    "runtime-main.js": "/make-money-fast/static/js/runtime-main.0fde4117.js",
-    "runtime-main.js.map": "/make-money-fast/static/js/runtime-main.0fde4117.js.map",
-    "static/js/2.bb94b9de.chunk.js": "/make-money-fast/static/js/2.bb94b9de.chunk.js",
-    "static/js/2.bb94b9de.chunk.js.map": "/make-money-fast/static/js/2.bb94b9de.chunk.js.map",
-    "static/js/3.0d804266.chunk.js": "/make-money-fast/static/js/3.0d804266.chunk.js",
-    "static/js/3.0d804266.chunk.js.map": "/make-money-fast/static/js/3.0d804266.chunk.js.map",
+    "main.css": "/make-money-fast/static/css/main.b09d27e8.chunk.css",
+    "main.js": "/make-money-fast/static/js/main.1bbfecdb.chunk.js",
+    "main.js.map": "/make-money-fast/static/js/main.1bbfecdb.chunk.js.map",
+    "runtime-main.js": "/make-money-fast/static/js/runtime-main.6514a81e.js",
+    "runtime-main.js.map": "/make-money-fast/static/js/runtime-main.6514a81e.js.map",
+    "static/js/2.87d33d51.chunk.js": "/make-money-fast/static/js/2.87d33d51.chunk.js",
+    "static/js/2.87d33d51.chunk.js.map": "/make-money-fast/static/js/2.87d33d51.chunk.js.map",
+    "static/js/3.039e62de.chunk.js": "/make-money-fast/static/js/3.039e62de.chunk.js",
+    "static/js/3.039e62de.chunk.js.map": "/make-money-fast/static/js/3.039e62de.chunk.js.map",
     "index.html": "/make-money-fast/index.html",
-    "static/css/main.a6665b44.chunk.css.map": "/make-money-fast/static/css/main.a6665b44.chunk.css.map",
-    "static/js/2.bb94b9de.chunk.js.LICENSE.txt": "/make-money-fast/static/js/2.bb94b9de.chunk.js.LICENSE.txt",
+    "static/css/main.b09d27e8.chunk.css.map": "/make-money-fast/static/css/main.b09d27e8.chunk.css.map",
+    "static/js/2.87d33d51.chunk.js.LICENSE.txt": "/make-money-fast/static/js/2.87d33d51.chunk.js.LICENSE.txt",
     "static/media/bankImage.d3285f40.jpg": "/make-money-fast/static/media/bankImage.d3285f40.jpg",
     "static/media/bank_fustrated.a99bb14b.jpg": "/make-money-fast/static/media/bank_fustrated.a99bb14b.jpg",
+    "static/media/bank_money.827840e2.jpg": "/make-money-fast/static/media/bank_money.827840e2.jpg",
     "static/media/bank_safe.c21a2f49.jpg": "/make-money-fast/static/media/bank_safe.c21a2f49.jpg",
     "static/media/happy_desk.b30e6070.jpg": "/make-money-fast/static/media/happy_desk.b30e6070.jpg",
     "static/media/initHeroImg2.1268b583.jpg": "/make-money-fast/static/media/initHeroImg2.1268b583.jpg",
@@ -21,9 +22,9 @@
     "static/media/mad_desk.f02a8fd1.jpg": "/make-money-fast/static/media/mad_desk.f02a8fd1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fde4117.js",
-    "static/js/2.bb94b9de.chunk.js",
-    "static/css/main.a6665b44.chunk.css",
-    "static/js/main.00b37b73.chunk.js"
+    "static/js/runtime-main.6514a81e.js",
+    "static/js/2.87d33d51.chunk.js",
+    "static/css/main.b09d27e8.chunk.css",
+    "static/js/main.1bbfecdb.chunk.js"
   ]
 }
