@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/make-money-fast/static/css/main.b09d27e8.chunk.css",
-    "main.js": "/make-money-fast/static/js/main.6f986d8b.chunk.js",
-    "main.js.map": "/make-money-fast/static/js/main.6f986d8b.chunk.js.map",
+    "main.js": "/make-money-fast/static/js/main.bed5d2ad.chunk.js",
+    "main.js.map": "/make-money-fast/static/js/main.bed5d2ad.chunk.js.map",
     "runtime-main.js": "/make-money-fast/static/js/runtime-main.0fde4117.js",
     "runtime-main.js.map": "/make-money-fast/static/js/runtime-main.0fde4117.js.map",
     "static/js/2.89b4c20b.chunk.js": "/make-money-fast/static/js/2.89b4c20b.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.0fde4117.js",
     "static/js/2.89b4c20b.chunk.js",
     "static/css/main.b09d27e8.chunk.css",
-    "static/js/main.6f986d8b.chunk.js"
+    "static/js/main.bed5d2ad.chunk.js"
   ]
 }
