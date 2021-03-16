@@ -51,17 +51,17 @@ class Klepty extends Component {
     let userResponse = []
     let textToRender = kleptySays
 
-    if (this.props.level >= 5) {
-        responses = []
-        textToRender = "Umm is it working?"
-    }
-
     for (let index = 0; index < responses.length; index++) {
         userResponse.push(<button
                             onClick={() => this.chooseResponse(index)}>
                          {responses[index].txt}
                             </button>)
         
+    }
+
+    if (this.props.level >= 5) {
+        userResponse = []
+        textToRender = "Umm is it working?"
     }
     return (
       <div class="klepty">
