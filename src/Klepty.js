@@ -52,7 +52,7 @@ class Klepty extends Component {
     let textToRender = kleptySays
 
     if (this.props.level >= 5) {
-        userResponse = []
+        responses = []
         textToRender = "Umm is it working?"
     }
 
